@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <title>Dev & YouTuber · Portfolio</title>
+  <!-- Font & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <div class="container header-content">
+      <div class="logo">Dev<span>.</span></div>
+      <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hi, I'm <span>Alex Rivera</span></h1>
+          <div class="sub">Software Developer & YouTuber</div>
+          <div class="typing-wrapper" id="typingText"></div>
+          <p>Passionate about building elegant products and sharing knowledge with the dev community.</p>
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://ui-avatars.com/api/?name=Alex+Rivera&background=4f8cff&color=fff&size=280" alt="Alex Rivera">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">I'm a software developer with 6+ years of experience and a YouTube educator. I love creating engaging web experiences and helping others learn to code.</p>
+            <p style="margin-top: 16px; color: var(--text-secondary);">From Shopify themes to full-stack apps, I bring ideas to life. My YouTube channel is where I share insights, tutorials, and project breakdowns.</p>
+          </div>
+          <div class="about-cards">
+            <div class="stat-card"><h3>6+</h3><p>Experience</p></div>
+            <div class="stat-card"><h3>48</h3><p>Projects</p></div>
+            <div class="stat-card"><h3>32</h3><p>Happy Clients</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" style="background: var(--surface);">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skill-card"><i class="fab fa-html5" style="font-size:2rem;color:#e34f26;"></i><div>HTML5</div><div class="skill-bar"><span style="width:90%"></span></div></div>
+          <div class="skill-card"><i class="fab fa-css3-alt" style="font-size:2rem;color:#2965f1;"></i><div>CSS3</div><div class="skill-bar"><span style="width:85%"></span></div></div>
+          <div class="skill-card"><i class="fab fa-js" style="font-size:2rem;color:#f7df1e;"></i><div>JavaScript</div><div class="skill-bar"><span style="width:80%"></span></div></div>
+          <div class="skill-card"><i class="fab fa-react" style="font-size:2rem;color:#61dafb;"></i><div>React</div><div class="skill-bar"><span style="width:78%"></span></div></div>
+          <div class="skill-card"><i class="fas fa-code" style="font-size:2rem;color:#8b5cf6;"></i><div>Shopify Liquid</div><div class="skill-bar"><span style="width:75%"></span></div></div>
+          <div class="skill-card"><i class="fab fa-bootstrap" style="font-size:2rem;color:#7952b3;"></i><div>Bootstrap</div><div class="skill-bar"><span style="width:82%"></span></div></div>
+          <div class="skill-card"><i class="fab fa-git-alt" style="font-size:2rem;color:#f05033;"></i><div>Git & GitHub</div><div class="skill-bar"><span style="width:88%"></span></div></div>
+          <div class="skill-card"><i class="fas fa-mobile-alt" style="font-size:2rem;color:#34a853;"></i><div>Responsive Design</div><div class="skill-bar"><span style="width:92%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ecom">E-Commerce</button>
+          <button class="filter-btn" data-filter="shopify">Shopify</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <div class="project-card" data-category="ecom"><img src="https://picsum.photos/seed/fashion/400/300" alt="fashion"><div class="project-body"><h4>Fashion Store</h4><p>Modern eCommerce with cart & filters</p><div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div></div></div>
+          <div class="project-card" data-category="web"><img src="https://picsum.photos/seed/restaurant/400/300" alt="restaurant"><div class="project-body"><h4>Restaurant Website</h4><p>Reservation & menu showcase</p><div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div></div></div>
+          <div class="project-card" data-category="shopify"><img src="https://picsum.photos/seed/shopify/400/300" alt="shopify theme"><div class="project-body"><h4>Shopify Theme</h4><p>Custom theme with liquid & react</p><div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div></div></div>
+          <div class="project-card" data-category="web"><img src="https://picsum.photos/seed/portfolio/400/300" alt="portfolio"><div class="project-body"><h4>Portfolio Website</h4><p>Personal brand & blog</p><div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div></div></div>
+          <div class="project-card" data-category="ecom"><img src="https://picsum.photos/seed/landing/400/300" alt="landing"><div class="project-body"><h4>Landing Page</h4><p>High-converting product launch</p><div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YOUTUBE -->
+    <section id="youtube" style="background: var(--surface);">
+      <div class="container">
+        <h2 class="section-title">YouTube <span>Channel</span></h2>
+        <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 32px;">
+          <div><span class="sub-count">12.4K</span> <span style="color:var(--text-secondary);">subscribers</span></div>
+          <a href="#" class="btn btn-primary"><i class="fab fa-youtube"></i> Visit My Channel</a>
+        </div>
+        <div class="yt-grid">
+          <div class="yt-card"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe><h4>Build a Portfolio in 1 hour</h4></div>
+          <div class="yt-card"><iframe src="https://www.youtube.com/embed/3nYLTiY5skU" allowfullscreen></iframe><h4>Shopify Theme Dev</h4></div>
+          <div class="yt-card"><iframe src="https://www.youtube.com/embed/PkZNo7MFNFg" allowfullscreen></iframe><h4>React Crash Course</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">My <span>Services</span></h2>
+        <div class="service-grid">
+          <div class="service-card"><i class="fas fa-laptop-code" style="font-size:2.4rem;color:var(--accent);"></i><h4>Website Development</h4><p>Custom websites, fast & responsive.</p></div>
+          <div class="service-card"><i class="fab fa-shopify" style="font-size:2.4rem;color:var(--accent);"></i><h4>Shopify Theme Dev</h4><p>Custom liquid themes & optimizations.</p></div>
+          <div class="service-card"><i class="fas fa-mobile-alt" style="font-size:2.4rem;color:var(--accent);"></i><h4>Responsive Design</h4><p>Pixel-perfect on every device.</p></div>
+          <div class="service-card"><i class="fas fa-code" style="font-size:2.4rem;color:var(--accent);"></i><h4>Frontend Development</h4><p>React, Vue, or vanilla JS.</p></div>
+          <div class="service-card"><i class="fas fa-video" style="font-size:2.4rem;color:var(--accent);"></i><h4>YouTube Content</h4><p>Tech tutorials & coding insights.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section style="background: var(--surface);">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card"><i class="fas fa-user-circle" style="font-size:2.2rem;color:var(--accent);"></i><p>"Alex built our entire storefront – amazing work!"</p><div><strong>Sarah J.</strong> <span style="color:var(--text-secondary);">CEO, Moda</span></div><div><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i></div></div>
+          <div class="testimonial-card"><i class="fas fa-user-circle" style="font-size:2.2rem;color:var(--accent);"></i><p>"Incredible teacher and developer. Highly recommend."</p><div><strong>Mark T.</strong> <span style="color:var(--text-secondary);">Developer</span></div><div><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i></div></div>
+          <div class="testimonial-card"><i class="fas fa-user-circle" style="font-size:2.2rem;color:var(--accent);"></i><p>"Our Shopify theme is flawless – sales increased!"</p><div><strong>Emily R.</strong> <span style="color:var(--text-secondary);">Store Owner</span></div><div><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star" style="color:gold;"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-grid">
+          <div>
+            <div class="contact-info"><p><i class="fas fa-envelope"></i> alex@devyt.com</p><p><i class="fas fa-phone"></i> +1 (555) 123-4567</p><p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p></div>
+            <div style="margin-top:20px;display:flex;gap:16px;"><a href="#" class="fab fa-github fa-2x" style="color:var(--text-secondary);"></a><a href="#" class="fab fa-linkedin fa-2x" style="color:var(--text-secondary);"></a><a href="#" class="fab fa-youtube fa-2x" style="color:var(--text-secondary);"></a></div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>© 2026 Alex Rivera · Dev & YouTuber</div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
